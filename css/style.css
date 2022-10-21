@@ -12,10 +12,23 @@
    COMMON 
 ----------*/
 
+main{
+    background-color: #b91450;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 1.5625rem;
+}
+
 .container{
     width: 50rem;
-    background-color: bisque;
     margin: auto;
+}
+
+.main-title{
+    text-align: center;
+    color: white;
+    margin-top: 1.5625rem;
+    margin-bottom: 1.5625rem;
 }
 
 /*----------
@@ -32,6 +45,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 1.5625rem 1.5625rem;
+    background-color: white;
 }
 
 .input-col{
@@ -58,3 +73,33 @@
     margin-right: .3125rem;
 }
 
+/* Output section */
+
+.output-section-hidden{
+    display: none;
+}
+
+.bottom-container{
+    background-color: white;
+}
+
+.output-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .9375rem 1.5625rem;
+}
+
+.output-col-big{
+    width: 15%;
+    text-align: center;
+}
+
+.output-col{
+    width: calc(100% / 4 - 15%);
+    text-align: center;
+}
+
+#ticket-name{
+    padding-left: 3.75rem;
+}

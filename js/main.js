@@ -19,23 +19,48 @@ generateButton.addEventListener("click", function(){
 
     if(isNaN(fullName) && !isNaN(tripDuration)){
         // Output Biglietto
+        let outputSection = document.getElementById("output-section");
+        outputSection.classList.toggle("output-section-hidden");
+
         if(userAge === "minorenne"){
 
             fullPrice -= fullPrice * 20 / 100;
 
-            // Implementare logica display biglietto
-            console.log(fullPrice.toFixed(2) + " €");
+            document.getElementById("user-full-name").innerHTML = fullName;
+
+            document.getElementById("ticket-name").innerHTML = "Tariffa Minori";
+
+            document.getElementById("carriage-number").innerHTML = 15;
+
+            document.getElementById("cp-code").innerHTML = 15;
+
+            document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
 
         }else if (userAge === "over65"){
 
             fullPrice -= fullPrice * 40 / 100;
 
-            // Implementare logica display biglietto
-            console.log(fullPrice.toFixed(2) + " €");
+            document.getElementById("user-full-name").innerHTML = fullName;
+
+            document.getElementById("ticket-name").innerHTML = "Tariffa Over 65";
+
+            document.getElementById("carriage-number").innerHTML = 15;
+
+            document.getElementById("cp-code").innerHTML = 15;
+
+            document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
 
         } else {
-            // Implementare logica display biglietto
-            console.log(fullPrice.toFixed(2) + " €");
+
+            document.getElementById("user-full-name").innerHTML = fullName;
+
+            document.getElementById("ticket-name").innerHTML = "Tariffa Standard";
+
+            document.getElementById("carriage-number").innerHTML = 15;
+
+            document.getElementById("cp-code").innerHTML = 15;
+
+            document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
 
         }
     }else{
