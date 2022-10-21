@@ -1,3 +1,59 @@
 /*----------
    RESET 
 ----------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------
+   COMMON 
+----------*/
+
+.container{
+    width: 50rem;
+    background-color: bisque;
+    margin: auto;
+}
+
+/*----------
+   MAIN 
+----------*/
+
+/* Input section */
+
+.input-section{
+    margin-top: 4.6875rem;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-col{
+    text-align: center;
+}
+
+.input-title{
+    display: block;
+    padding-bottom: .3125rem;
+}
+
+.btns-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5625rem;
+}
+
+.btns-col{
+    display: flex;
+}
+
+.generate-btn{
+    margin-right: .3125rem;
+}
