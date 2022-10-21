@@ -3,6 +3,9 @@
 // Creo variabile con dentro l'elemento generate-btn
 const generateButton = document.getElementById("generate-btn");
 
+// Creo variabile con dentro l'elemento refresh-btn
+const refreshButton = document.getElementById("refresh-btn");
+
 // Evento al click del generate-btn
 generateButton.addEventListener("click", function(){
     // Leggo nome e cognome dell' utente
@@ -69,3 +72,8 @@ generateButton.addEventListener("click", function(){
         window.location.reload();
     }
 });
+
+// Creo evento per ripulire il form
+refreshButton.addEventListener("click", function(){
+    window.location.reload();
+})
