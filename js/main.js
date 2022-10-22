@@ -25,6 +25,12 @@ generateButton.addEventListener("click", function(){
         let outputSection = document.getElementById("output-section");
         outputSection.classList.toggle("output-section-hidden");
 
+        // Numero Carrozza
+        let carriageNumber = Math.floor(Math.random() * 10) + 1;
+
+        // Numero CP
+        let cpCode = Math.floor(Math.random() * 10000) + 90000;
+
         if(userAge === "minorenne"){
 
             fullPrice -= fullPrice * 20 / 100;
@@ -33,9 +39,9 @@ generateButton.addEventListener("click", function(){
 
             document.getElementById("ticket-name").innerHTML = "Tariffa Minori";
 
-            document.getElementById("carriage-number").innerHTML = 15;
+            document.getElementById("carriage-number").innerHTML = carriageNumber;
 
-            document.getElementById("cp-code").innerHTML = 15;
+            document.getElementById("cp-code").innerHTML = cpCode;
 
             document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
 
@@ -47,9 +53,9 @@ generateButton.addEventListener("click", function(){
 
             document.getElementById("ticket-name").innerHTML = "Tariffa Over 65";
 
-            document.getElementById("carriage-number").innerHTML = 15;
+            document.getElementById("carriage-number").innerHTML = carriageNumber;
 
-            document.getElementById("cp-code").innerHTML = 15;
+            document.getElementById("cp-code").innerHTML = cpCode;
 
             document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
 
@@ -59,9 +65,9 @@ generateButton.addEventListener("click", function(){
 
             document.getElementById("ticket-name").innerHTML = "Tariffa Standard";
 
-            document.getElementById("carriage-number").innerHTML = 15;
+            document.getElementById("carriage-number").innerHTML = carriageNumber;
 
-            document.getElementById("cp-code").innerHTML = 15;
+            document.getElementById("cp-code").innerHTML = cpCode;
 
             document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
 
