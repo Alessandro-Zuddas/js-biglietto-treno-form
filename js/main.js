@@ -20,7 +20,7 @@ generateButton.addEventListener("click", function(){
     // Inizializzo prezzo standard biglietto
     let fullPrice = tripDuration * 0.21;
 
-    if(isNaN(fullName) && !isNaN(tripDuration)){
+    if(isNaN(fullName) && !isNaN(tripDuration) && tripDuration >= 0){
         // Output Biglietto
         let outputSection = document.getElementById("output-section");
         outputSection.classList.toggle("output-section-hidden");
@@ -72,9 +72,10 @@ generateButton.addEventListener("click", function(){
             document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
 
         }
+
     }else{
         // Errore di inserimento
-        alert("Inserisci solamente testo e numeri!!")
+        alert("Puoi inserire solo testo e numeri positivi!!!")
         window.location.reload();
     }
 });
