@@ -22,11 +22,14 @@ main{
 .container{
     width: 50rem;
     margin: auto;
+    border-radius: .9375rem;
+    background-color: white;
 }
 
 .main-title{
     text-align: center;
     color: white;
+    font-size: 2.5rem;
     margin-top: 1.5625rem;
     margin-bottom: 1.5625rem;
 }
@@ -45,8 +48,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 1.5625rem 1.5625rem;
-    background-color: white;
+    padding: 1.5625rem 6.25rem;
 }
 
 .input-col{
@@ -55,14 +57,22 @@ main{
 
 .input-title{
     display: block;
+    color: #b91450;
     padding-bottom: .3125rem;
+}
+
+#full-name-input, #trip-duration, #age-select{
+    border: .0313rem solid #b91450;
+    border-radius: .3125rem;
+    padding: .3125rem .3125rem;
 }
 
 .btns-row{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 1.5625rem;
+    padding: 1.5625rem 6.25rem;
+    margin-bottom: 3.125rem;
 }
 
 .btns-col{
@@ -73,6 +83,11 @@ main{
     margin-right: .3125rem;
 }
 
+.btn-row-btns{
+    color: #b91450;
+    padding: .3125rem .3125rem;
+}
+
 /* Output section */
 
 .output-section-hidden{
@@ -81,6 +96,7 @@ main{
 
 .bottom-container{
     background-color: white;
+    border-radius: 0;
 }
 
 .output-row{
@@ -98,6 +114,10 @@ main{
 .output-col{
     width: calc(100% / 4 - 15%);
     text-align: center;
+}
+
+.output-table-head{
+    border: 1px solid black;
 }
 
 #ticket-name{
