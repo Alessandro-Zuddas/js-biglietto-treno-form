@@ -14,7 +14,7 @@ generateButton.addEventListener("click", function(){
     // Leggo i km da percorrere dell' utente
     const tripDuration = document.getElementById(`trip-duration`).value;
 
-    // Leggo i km da percorrere dell' utente
+    // Leggo i l'età dell utente
     const userAge = document.getElementById(`age-select`).value;
 
     // Inizializzo prezzo standard biglietto
@@ -70,7 +70,6 @@ generateButton.addEventListener("click", function(){
             document.getElementById("cp-code").innerHTML = cpCode;
 
             document.getElementById("ticket-price").innerHTML = fullPrice.toFixed(2) + " €";
-
         }
 
     }else{
