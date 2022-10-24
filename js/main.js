@@ -74,7 +74,7 @@ generateButton.addEventListener("click", function(){
 
     }else{
         // Errore di inserimento
-        alert("Puoi inserire solo testo e numeri positivi!!!")
+        alert("Puoi inserire solo testo e numeri positivi diversi da 0!")
         window.location.reload();
     }
 });
